@@ -1,0 +1,895 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-style: normal;
+}
+html {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+img {
+  border: none;
+  display: block;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+a:active {
+  outline: none;
+  border: none;
+}
+a:hover {
+  outline: none;
+  border: none;
+}
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background: #000124;
+}
+body {
+  display: none;
+}
+.section {
+  overflow: hidden;
+}
+.f_floor {
+  width: 100%;
+  height: 100%;
+  min-width: 1200px;
+}
+.f_main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.f_floor_ban {
+  background: url(../images/banner_bg.png) no-repeat top;
+}
+.f_bancon {
+  display: block;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  margin-left: -500px;
+}
+.f_titbox {
+  padding: 60px 0 40px;
+}
+.f_tit_num {
+  font-size: 56px;
+  color: #3f506c;
+  text-align: center;
+}
+.f_titbot {
+  text-align: center;
+}
+.f_titleft {
+  display: inline-block;
+  vertical-align: middle;
+  width: 278px;
+  height: 12px;
+  background: url(../images/f_tit_left.png) no-repeat center;
+}
+.f_titright {
+  display: inline-block;
+  vertical-align: middle;
+  width: 264px;
+  height: 12px;
+  background: url(../images/f_tit_right.png) no-repeat center;
+}
+.f_titbot_con {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 54px;
+  color: #fff;
+  font-weight: normal;
+  margin: 0 20px;
+}
+.f_tit_eng {
+  font-size: 22px;
+  color: #3f506c;
+  text-align: center;
+}
+.f_juan_con {
+  width: 1100px;
+  position: relative;
+  right: -60px;
+}
+.f_juan_con p {
+  font-size: 22px;
+  color: #FFFFFF;
+  line-height: 44px;
+  text-indent: 2em;
+}
+.f_two_tit {
+  position: relative;
+  left: -200px;
+}
+.f_one_list li {
+  width: 296px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.f_one_img {
+  width: 120px;
+  height: 130px;
+  background: url(../images/f_one_img_01.png) no-repeat center;
+  margin: 30px auto;
+}
+.f_one_img2 {
+  background: url(../images/f_one_img_02.png) no-repeat center;
+}
+.f_one_img3 {
+  background: url(../images/f_one_img_03.png) no-repeat center;
+}
+.f_one_img4 {
+  background: url(../images/f_one_img_04.png) no-repeat center;
+}
+.f_one_text {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+.f_one_line {
+  width: 60px;
+  height: 4px;
+  background: #3F506C;
+  margin: 30px auto 38px;
+}
+.f_one_num {
+  font-size: 36px;
+  color: #1490ff;
+  text-align: center;
+}
+.f_two_tip {
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-bottom: 20px ;
+  text-align: center;
+}
+.f_three_touzi {
+  width: 723px;
+  height: 383px;
+  background: url(../images/f_touzi_bg.png) no-repeat center;
+  margin: 30px auto;
+  position: relative;
+}
+.f_three_con {
+  width: 581px;
+  height: 293px;
+  background: url(../images/f_touzi.png) no-repeat bottom;
+  position: absolute;
+  left: 110px;
+  bottom: 35px;
+}
+.f_shouyi {
+  width: 715px;
+  height: 375px;
+  background: url(../images/f_shouyi.png) no-repeat center;
+  margin: 30px auto;
+}
+.f_toubiao {
+  width: 715px;
+  height: 375px;
+  background: url(../images/f_toubiao.png) no-repeat center;
+  margin: 30px auto;
+}
+.f_agebox {
+  width: 786px;
+  height: 400px;
+  background: url(../images/f_age.png) no-repeat center;
+  margin: 30px auto;
+}
+.f_map_box {
+  position: relative;
+}
+.f_map {
+  width: 541px;
+  height: 452px;
+  background: url(../images/f_map.png) no-repeat center;
+  position: relative;
+  top: 0;
+  left: 200px;
+}
+.f_map_top {
+  width: 541px;
+  height: 452px;
+  background: url(../images/f_map_top.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.f_map_list {
+  width: 116px;
+  height: 235px;
+  background: url(../images/f_map_list.png) no-repeat center;
+  position: absolute;
+  right: 160px;
+  top: 100px;
+}
+.f_fenbu {
+  width: 316px;
+  height: 316px;
+  background: url(../images/f_toubiao_circle.png) no-repeat center;
+  margin: 40px auto;
+  position: relative;
+}
+.f_fenbu1 {
+  width: 240px ;
+  height: 78px;
+  background: url(../images/f_toubiao_num1.png) no-repeat center;
+  position: absolute;
+  top: 0px;
+  left: -222px;
+}
+.f_fenbu2 {
+  width: 233px ;
+  height: 78px;
+  background: url(../images/f_toubiao_num2.png) no-repeat center;
+  position: absolute;
+  top: 180px;
+  left: -211px;
+}
+.f_fenbu3 {
+  width: 243px ;
+  height: 75px;
+  background: url(../images/f_toubiao_num3.png) no-repeat center;
+  position: absolute;
+  right: -155px;
+  top: -53px;
+}
+.f_fenbu4 {
+  width: 186px ;
+  height: 73px;
+  background: url(../images/f_toubiao_num4.png) no-repeat center;
+  position: absolute;
+  right: -166px;
+  top: 16px;
+}
+.f_fenbu5 {
+  width: 180px ;
+  height: 79px;
+  background: url(../images/f_toubiao_num5.png) no-repeat center;
+  position: absolute;
+  right: -167px;
+  top: 211px;
+}
+.f_halfyear_list {
+  text-align: center;
+}
+.f_halfyear_list li {
+  width: 330px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+.f_halfyear_tit {
+  display: block;
+  width: 198px;
+  height: 50px;
+  line-height: 50px;
+  background: #1490FF;
+  color: #FFFFFF;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-size: 28px;
+}
+.f_halfyear_img {
+  width: 120px;
+  height: 130px;
+  background: url(../images/f_one_img_02.png) no-repeat center;
+  margin: 60px auto 20px;
+}
+.f_halfyear_img2 {
+  background: url(../images/f_one_img_04.png) no-repeat center;
+}
+.f_halfyear_img3 {
+  background: url(../images/f_one_img_03.png) no-repeat center;
+}
+.f_halfyear_tip {
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.f_halfyear_num {
+  color: #1490FF;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.f_halfyear_user {
+  font-size: 22px;
+  color: #fff;
+}
+.f_loginnum_box {
+  width: 890px;
+  height: 384px;
+  background: url(../images/f_loginnum_bg.png) no-repeat center;
+  margin: 30px auto;
+  position: relative;
+}
+.f_login2017 {
+  width: 624px;
+  height: 59px;
+  background: url(../images/f_people_bot.png) repeat-x;
+  position: absolute ;
+  top: 70px;
+  left: 220px;
+}
+.f_login2016 {
+  width: 624px;
+  height: 59px;
+  background: url(../images/f_people_bot.png) repeat-x;
+  position: absolute ;
+  top: 214px;
+  left: 220px;
+}
+.f_login2017_top {
+  width: 576px;
+  height: 59px;
+  background: url(../images/f_people_top.png) repeat-x;
+}
+.f_login2016_top {
+  width: 168px;
+  height: 59px;
+  background: url(../images/f_people_top.png) repeat-x;
+}
+.f_qudao_leftbox {
+  text-align: center;
+}
+.f_qudao_leftbox li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 130px;
+  margin-top: 40px;
+}
+.f_qudao_leftbox li.last {
+  margin-right: 0;
+}
+.f_qudao_leftimg {
+  width: 280px;
+  height: 280px;
+  background: url(../images/f_bolang_01.png) no-repeat center;
+}
+.f_qudao_leftimg2 {
+  background: url(../images/f_bolang_02.png) no-repeat center;
+}
+.f_qudao_text {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+}
+.f_qixianbox {
+  width: 330px;
+  height: 330px;
+  background: url(../images/f_qixian_bot.png) no-repeat center;
+  position: relative;
+  top: 30px;
+  left: 432px;
+}
+.f_qixiancon {
+  width: 330px;
+  height: 330px;
+  background: url(../images/f_qixian_top.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.f_qixiancon_tip {
+  width: 86px;
+  height: 118px;
+  background: url(../images/f_qixian_smtip.png) no-repeat center;
+  position: absolute;
+  top: -3px;
+  right: 50px;
+}
+.f_qixian_tip {
+  width: 180px;
+  height: 250px;
+  background: url(../images/f_qixian_tip.png) no-repeat center;
+  position: absolute;
+  top: 340px;
+  right: 190px;
+}
+.f_jsdimg {
+  width: 789px;
+  height: 492px;
+  background: url(../images/f_jsdimg.png) no-repeat center;
+  margin: 20px auto;
+}
+.f_lasttit {
+  font-size: 112px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 100px 0 50px;
+}
+.f_lasttit2 {
+  font-size: 22px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.f_ewmbox {
+  text-align: center;
+}
+.f_ewmbox li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 160px;
+}
+.f_ewmbox li img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 40px;
+}
+.f_ewmbox li p {
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.f_ewmbox li.last {
+  margin-right: 0;
+}
+.fadein {
+  animation: fadeinfun .8s linear both;
+  -moz-animation: fadeinfun .8s linear  both;
+  -webkit-animation: fadeinfun .8s linear  both;
+  -o-animation: fadeinfun .8s linear both;
+}
+@-webkit-keyframes fadeinfun {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes fadeinfun {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.fadeinbig {
+  animation: fadeinbigfun .5s linear .8s both ;
+  -moz-animation: fadeinbigfun .5s linear  .8s both;
+  -webkit-animation: fadeinbigfun .5s linear  .8s both;
+  -o-animation: fadeinbigfun .5s linear  .8s both;
+}
+@-webkit-keyframes fadeinbigfun {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes fadeinbigfun {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.fenbu_in1 {
+  animation: fadeinfun .4s linear 1.6s both ;
+  -moz-animation: fadeinfun .4s linear  1.6s both;
+  -webkit-animation: fadeinfun .4s linear  1.6s both;
+  -o-animation: fadeinfun .4s linear  1.6s both;
+}
+.fenbu_in2 {
+  animation: fadeinfun .4s linear 2s both ;
+  -moz-animation: fadeinfun .4s linear  2s both;
+  -webkit-animation: fadeinfun .4s linear  2s both;
+  -o-animation: fadeinfun .4s linear  2s both;
+}
+.fenbu_in3 {
+  animation: fadeinfun .4s linear 2.2s both ;
+  -moz-animation: fadeinfun .4s linear  2.2s both;
+  -webkit-animation: fadeinfun .4s linear  2.2s both;
+  -o-animation: fadeinfun .4s linear  2.2s both;
+}
+.fenbu_in4 {
+  animation: fadeinfun .4s linear 2.4s both ;
+  -moz-animation: fadeinfun .4s linear  2.4s both;
+  -webkit-animation: fadeinfun .4s linear  2.2s both;
+  -o-animation: fadeinfun .4s linear  2.4s both;
+}
+.fenbu_in5 {
+  animation: fadeinfun .4s linear 2.6s both ;
+  -moz-animation: fadeinfun .4s linear  2.6s both;
+  -webkit-animation: fadeinfun .4s linear  2.6s both;
+  -o-animation: fadeinfun .4s linear  2.6s both;
+}
+.f_rotate {
+  vertical-align: middle;
+  animation: turn 1s linear infinite;
+  -moz-animation: turn 1s linear infinite;
+  /* Firefox */
+  -webkit-animation: turn 1s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: turn 1s linear infinite;
+  /* Opera */
+}
+@keyframes turn {
+  0% {
+    transform: rotate();
+    -webkit-transform: rotate();
+    /* Safari 和 Chrome */
+    -moz-transform: rotate();
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes turn {
+  0% {
+    transform: rotate();
+    -webkit-transform: rotate();
+    /* Safari 和 Chrome */
+    -moz-transform: rotate();
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes turn {
+  0% {
+    transform: rotate();
+    -webkit-transform: rotate();
+    /* Safari 和 Chrome */
+    -moz-transform: rotate();
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes turn {
+  0% {
+    transform: rotate();
+    -webkit-transform: rotate();
+    /* Safari 和 Chrome */
+    -moz-transform: rotate();
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    /* Safari 和 Chrome */
+    -moz-transform: rotate(360deg);
+  }
+}
+#menu {
+  position: fixed !important;
+  z-index: 100;
+  top: 210px;
+  right: 50%;
+  margin-right: -790px;
+}
+#menu li {
+  width: 50px;
+  margin: 0 auto 16px;
+}
+#menu li.last {
+  width: 40px;
+  height: 40px;
+}
+#menu li.last a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+}
+#menu li.last a span {
+  display: block;
+  width: 36px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #000124;
+  color: #1490FF;
+  background: #fff;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 2px 0;
+}
+#menu a {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  background: #fff;
+  margin: 0 auto;
+}
+#menu li.active a {
+  background: #1490FF;
+}
+.dx_list_left {
+  animation: bounceInLeft 1s ;
+  -moz-animation: bounceInLeft 1s ;
+  /* Firefox */
+  -webkit-animation: bounceInLeft 1s ;
+  /* Safari 和 Chrome */
+  -o-animation: bounceInLeft 1s ;
+  /* Opera */
+}
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-400px);
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-400px);
+    -ms-transform: translateX(-400px);
+    transform: translateX(-400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.dx_list_right {
+  animation: bounceInRight 1s ;
+  -moz-animation: bounceInRight 1s ;
+  /* Firefox */
+  -webkit-animation: bounceInRight 1s ;
+  /* Safari 和 Chrome */
+  -o-animation: bounceInRight 1s ;
+  /* Opera */
+}
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(400px);
+    -ms-transform: translateX(400px);
+    transform: translateX(400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.dx_widthout {
+  animation: widthOut 1s ;
+  -moz-animation: widthOut 1s ;
+  /* Firefox */
+  -webkit-animation: widthOut 1s ;
+  /* Safari 和 Chrome */
+  -o-animation: widthOut 1s ;
+  /* Opera */
+}
+@-webkit-keyframes widthOut {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 576px;
+  }
+}
+@keyframes widthOut {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 576px;
+  }
+}
+.dx_widthout2 {
+  animation: widthOut2 0.5s ;
+  -moz-animation: widthOut2 0.5s ;
+  /* Firefox */
+  -webkit-animation: widthOut2 0.5s ;
+  /* Safari 和 Chrome */
+  -o-animation: widthOut2 0.5s ;
+  /* Opera */
+}
+@-webkit-keyframes widthOut2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 168px;
+  }
+}
+@keyframes widthOut2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 168px;
+  }
+}
+.dx_heighttop {
+  animation: heightTop 1.6s ;
+  -moz-animation: heightTop 1.6s ;
+  /* Firefox */
+  -webkit-animation: heightTop 1.6s ;
+  /* Safari 和 Chrome */
+  -o-animation: heightTop 1.6s ;
+  /* Opera */
+}
+@-webkit-keyframes heightTop {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 293px;
+  }
+}
+@keyframes heightTop {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 293px;
+  }
+}
+.dx_roate {
+  -webkit-animation: roatefun 1.5s ease-out;
+  -o-animation: roatefun 1.5s ease-out;
+  animation: roatefun 1.5s ease-out;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes roatefun {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1, 1);
+  }
+}
+@keyframes roatefun {
+  0% {
+    transform: rotate(0deg) scale(0, 0);
+  }
+  100% {
+    transform: rotate(360deg) scale(1, 1);
+  }
+}
+.dx_qixian1 {
+  animation: fadeinfun .4s linear 1s both ;
+  -moz-animation: fadeinfun .4s linear  1s both;
+  -webkit-animation: fadeinfun .4s linear  1s both;
+  -o-animation: fadeinfun .4s linear  1s both;
+}
+.dx_qixian2 {
+  animation: fadeinfun .4s linear 1.2s both ;
+  -moz-animation: fadeinfun .4s linear  1.2s both;
+  -webkit-animation: fadeinfun .4s linear  1.2s both;
+  -o-animation: fadeinfun .4s linear  1.2s both;
+}
+.dx_bounceleft1 {
+  animation: bounceInRight 1s linear  both;
+  -moz-animation: bounceInRight 1s linear  both;
+  /* Firefox */
+  -webkit-animation: bounceInRight 1s linear  both;
+  /* Safari 和 Chrome */
+  -o-animation: bounceInRight 1s linear  both ;
+  /* Opera */
+}
+.dx_bounceleft2 {
+  animation: bounceInRight 1s linear .3s both;
+  -moz-animation: bounceInRight 1s linear .3s both;
+  /* Firefox */
+  -webkit-animation: bounceInRight 1s linear .3s both;
+  /* Safari 和 Chrome */
+  -o-animation: bounceInRight 1s linear .3s both ;
+  /* Opera */
+}
+.dx_bounceleft3 {
+  animation: bounceInRight 1s linear .6s both;
+  -moz-animation: bounceInRight 1s linear .6s both;
+  /* Firefox */
+  -webkit-animation: bounceInRight 1s linear .6s both;
+  /* Safari 和 Chrome */
+  -o-animation: bounceInRight 1s linear .6s both ;
+  /* Opera */
+}

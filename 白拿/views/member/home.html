@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心框架</title>
+    <link rel="stylesheet" href="../../static/css/fonts.css"/>
+    <link rel="stylesheet" href="../../static/css/member_comm.css"/>
+</head>
+<body>
+<!--S 头部 -->
+<div class="c_homepage_header">
+    <div class="main_body">
+        <div class="c_headercon_left">
+            <div class="c_investor_img">
+                <a href="javascript:void(0);">
+                    <img src="../../static/img/delete/header_img.png"/>
+                    <span class="c_text_top">编辑头像</span>
+                    <div class="c_top_bg"></div>
+                </a>
+            </div>
+            <div class="c_investor_details">
+                <p>早上好, <a href="javascript:void(0);">15266668888 </a>拥抱积极的心态，改变现有的生活。</p>
+                <ul class="c_investor_ul">
+                    <li>ID：<a href="" style="color:#fff;">320906</a><i>|</i></li>
+                    <li>手机：15266668888<i>|</i></li>
+                    <li>邮箱：1063451350@qq.com<i>|</i></li>
+                    <li>昵称：<a href="" style="color:#fff;">Cccl</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="c_headercon_right">
+            <a href="" class="c_personage_data">
+                <span>今日签到</span>
+            </a>
+            <a href="" class="c_login_code">
+                <span>登录密码</span>
+            </a>
+            <a href="" class="c_real_name">
+                <span>收货地址</span>
+            </a>
+            <a href="" class="c_deal_code">
+                <span>实名认证</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="c_newhead_portrait">
+    <span class="c_close_btn"></span>
+</div>
+<div class="c_box_bg"></div>
+<!-- E头部-->
+
+<div class="main_body content_box">
+
+    <!-- S 左侧导航-->
+    <ul class="c_left_nav pull_left">
+        <li>
+            <a class="J_left_nav_tit c_out_a c_click_li" href="#">
+                <i class="c_left_i iconfont icon-index"></i>
+                <span>我的账户</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="#/f_myrecharge">
+                <i class="c_left_i iconfont icon-record"></i>
+                <span>充值记录</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="#/f_myaccount_order">
+                <i class="c_left_i iconfont icon-baina"></i>
+                <span>我的白拿</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="javascript:void(0);">
+                <i class="c_left_i iconfont icon-tixian"></i>
+                <span>提现记录</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="javascript:void(0);">
+                <i class="c_left_i iconfont icon-fund"></i>
+                <span>资金记录</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="javascript:void(0);">
+                <i class="c_left_i iconfont icon-adr"></i>
+                <span>收货地址</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="javascript:void(0);">
+                <i class="c_left_i iconfont icon-card"></i>
+                <span>绑定银行卡</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="javascript:void(0);">
+                <i class="c_left_i iconfont icon-safe"></i>
+                <span>安全中心</span>
+            </a>
+        </li>
+        <li>
+            <a class="J_out_a c_out_a" href="javascript:void(0);">
+                <i class="c_left_i iconfont icon-question"></i>
+                <span>常见问题</span>
+            </a>
+        </li>
+
+    </ul>
+    <!-- E 左侧导航-->
+    <div class="J_right_con_box y_right_con_box  pull_right">
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+<script src="../../static/plugin/jquery.min.js"></script>
+<script src="../../static/plugin/route.js"></script>
+<script src="../../static/js/member/member_comm.js"></script>
+
+<script type="text/javascript">
+    var use=diqye.app.use;
+    //首页
+    use('/',function(req,next){
+        $.get("f_myaccount.html",function(html){
+            $('.J_right_con_box').html(html);
+        });
+    });
+    //充值记录
+    use('/f_myrecharge',function(req,next){
+        $.get("f_myrecharge.html",function(html){
+            $('.J_right_con_box').html(html);
+        });
+    });
+    //我的白拿
+    use('/f_myaccount_order',function(req,next){
+        $.get("f_myaccount_order.html",function(html){
+            $('.J_right_con_box').html(html);
+        });
+    });
+    diqye.app.start();
+</script>
+</body>
+</html>

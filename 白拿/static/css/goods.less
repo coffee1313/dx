@@ -1,0 +1,326 @@
+@charset "utf-8";
+@import "common.less";
+body{min-width:1210px;}
+/*
+ * @author:shangliqun@ddtkj.com
+ * @since 2016-8-19
+ * @description goods_list.html
+ * */
+
+//列表页面包屑导航
+.breads{
+    padding:20px 0;
+    a{
+        color:#666;
+        &.active{
+            color:@color;
+        }
+    }
+    &>a+a:before{
+        content: '> ';
+        padding:0 6px;
+        color:#666;
+    }
+}
+.y_class{
+    padding: 20px 0 0;
+    border-top: 1px solid #e8e8e8;
+}
+.y_class_label{
+    display: block;
+    float: left;
+    width: 66px;
+    color: #666;
+}
+.y_classes{
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 20px;
+    &:hover,&.active{
+        color:@color;
+    }
+}
+//列表
+.goods_list{
+    margin-top:30px;
+    li{
+        display:inline-block;
+        width:230px;
+        background:#fff;
+        margin:0 6px 20px 0;
+        padding:20px 0 15px;
+        line-height:22px;
+        border:1px solid #eaeaea;
+        &:hover{
+            -moz-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            -ms-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            -webkit-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            -o-box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            box-shadow:0 15px 30px rgba(0,0,0,0.1);
+            -moz-transform:translate3d(0, -2px, 0);
+            -ms-transform:translate3d(0, -2px, 0);
+            -webkit-transform:translate3d(0, -2px, 0);
+            -o-transform:translate3d(0, -2px, 0);
+            transform:translate3d(0, -2px, 0);
+        }
+    }
+}
+.goods_list_img{
+    width:147px;   
+    height:147px;
+    margin-bottom:20px; 
+}
+.goods_listBtn{     
+    display:inline-block;
+    padding:3px 10px;
+    margin-top:7px;
+}
+/*
+ * @author:shangliqun@ddtkj.com
+ * @since 2016-8-19
+ * @description goods_detail.html
+ * */
+
+//左侧
+
+.detail_left{
+    width:422px;
+}
+.detai_big{
+    width:420px;
+    height:410px;
+    border:1px solid #E0E0E0;  
+}
+.detai_big dd{
+    display:none;
+}
+.detai_big img{
+    display:block;
+    width:400px;
+    height:400px;
+    margin:0 auto;
+}
+.detai_small{
+    position: relative;
+    height: 82px;
+    margin-top:20px;
+    padding-top: 22px;
+    width: 423px;
+    text-align:center;
+}
+.detai_small i{
+    position:absolute;
+    left:32px;
+    top:4px;
+    font-weight:bold;
+}
+.detai_small li{
+    float: left;
+    width: 73px;
+    height:55px;
+    border: 1px solid #ddd;
+    margin-right:12px;
+    &.last{
+        margin-right:0;
+    }
+}
+.detai_small .active{
+    border:1px solid @color;
+}
+.detai_small img{
+    width:100%;
+    height:100%;
+}
+.detail_fx span{
+    float:left;
+    line-height:20px;
+    margin-right:6px;
+}
+.bdsharebuttonbox.detail_fx a{
+   width:22px;
+   height:22px;
+   line-height:22px;
+   margin: 0 2px;
+   padding:0;
+   background:url(../img/icon/fx.jpg) no-repeat;
+}
+.bdsharebuttonbox.detail_fx .bds_tqq{
+    background-position:0 0;
+}
+.bdsharebuttonbox.detail_fx .bds_tsina{
+    background-position:-25px 0;
+}
+.bdsharebuttonbox.detail_fx .bds_qzone{
+    background-position:-50px 0;
+}
+.bdsharebuttonbox.detail_fx .bds_renren{
+    background-position:-75px 0;
+}
+.bdsharebuttonbox.detail_fx .bds_weixin{
+    background-position:-100px 0;
+}
+//右侧
+.detail_right{   
+    width:750px;
+}
+//参考价格
+.detail_cost{
+    margin:20px 0;
+}
+.detail_cost em{
+    text-decoration: line-through;
+}
+//颜色
+.detail_color{
+    vertical-align: top;
+    li{
+        position:relative;
+        display:inline-block;
+        width:54px;
+        border:1px solid #ddd;
+        margin-right:6px;
+        cursor:pointer;
+    }
+    .active{
+        border:2px solid @color;
+        i{
+            display:block;
+            color:@color;
+        }
+    }
+    img{
+        display:block;
+        width:52px;
+        height:52px;
+        margin:0 auto;
+    }
+    em{
+        display:block;
+        text-align:center;
+        font-size:14px;
+    }
+    i{
+        position:absolute;
+        bottom:-2px;
+        right:-2px;
+        display:none;
+    }
+}
+//版本
+.detail_border{
+    padding-bottom:30px;
+    border-bottom:1px dashed #ddd;
+}
+.detail_edition li{
+    display:inline-block;
+    min-width:106px;
+    padding:5px 0;
+    border:1px solid #ddd;
+    font-size:12px;
+    cursor:pointer;
+    text-align:center;
+    margin-right:10px;
+}
+.detail_edition .active{
+    border:1px solid @color;
+    em{
+        color:@color;
+    }
+}
+.detail_money{
+    font-size:28px;
+    color:@color;
+}
+.detail_btn{
+    display:inline-block;
+    padding:8px 60px;
+    margin-top:5px;
+}
+.choose_amount{
+    position:relative;
+
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    a{
+        display:block;
+        position:absolute;
+        top:1px;
+        width:28px;
+        height:28px;
+        line-height: 28px;
+        background:#f5f5f5;
+        text-align: center;
+        font-size: 20px;
+    }
+    .reduce_btn{
+        left:1px;
+        border-right:1px solid #ddd;
+    }
+    .add_btn{
+        right:1px;
+        border-left:1px solid #ddd;
+    }
+
+}
+.buy_num{
+    display:block;
+    width:60px;
+    height:28px;
+    border:1px solid #ddd;
+    outline:none;
+    padding:0 32px;
+    text-align: center;
+}
+//详情下选项卡
+.goods_tab{
+    margin-top:35px;
+    border:1px solid #ddd;
+}
+.goods_select{
+    width:100%;
+    background:#f2f2f2;
+    height:42px;
+    border-bottom:1px solid #ddd;
+}
+.goods_select li{
+    float:left;
+    width:197px;
+    text-align:center;
+    font-size:16px;
+    cursor:pointer;
+    line-height:42px;
+    border-right:1px solid #ddd;
+}
+.goods_select .active{
+    border-top:2px solid @color;
+    background:#fff;
+    line-height:41px;
+}
+.detail_con{
+    display:none;
+    padding:55px 0;
+}
+.detail_con img{
+    display:block;
+    width:900px;
+    margin:0 auto;
+}
+//常用值
+.mt10{margin-top:10px;}
+.mb20{
+    margin-bottom:20px;
+}
+.mb30{
+    margin-bottom:30px;
+}
+.wid80{
+    width:80px;
+}
+.pl20{
+    padding-left:20px;
+}
+.ml8{
+    margin-left:8px;
+}
+.ml20{margin-left:20px;}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="renderer" content="webkit">
+		<title>支付-白拿</title>
+		<link rel="stylesheet" href="../../static/css/f_order.css" />
+		<link rel="stylesheet" href="../../static/css/fonts.css" />
+	</head>
+	<body>
+		<!--s 支付 -->
+		<div class="main_body f_pay">
+			<h3 class="f_o_titcom f_paytit">确认支付</h3>
+			<div class="f_paybox">
+				<div class="f_paycon">
+					<p class="f_paycon_success"><i class="iconfont icon-sure"></i>订单提交成功，请您尽快付款！</p>
+					<p class="c_gray">应付金额   <span class="c_red"> 90,200.00元</span></p>
+					<p class="c_light_gray">使用账户余额支付，账户余额： <span class="c_red f18">100000.00</span> 元（小数位不参与计算）</p>
+				</div>
+				<div class="f_paytip">
+					<a class="btn_paysure" href="javascript:void(0);">确认支付</a>
+					<div class="f_paytipcon">
+						<p>付款遇到问题:</p>
+						<p>1、如您未开通网上银行，即可以使用储蓄卡快捷支付轻松完成付款；</p>
+						<p>2、如果银行卡已经扣款，但您的账户中没有显示，有可能因为网络原因导致，请及时联系客服400-814-0777。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--e 结束-->
+		
+		<script type="text/javascript" src="../../static/plugin/jquery.min.js" ></script>
+		<script type="text/javascript" src="../../static/plugin/layer/layer.js" ></script>
+		<script type="text/javascript">
+			//自定页
+			$('.btn_paysure').click(function(){
+				layer.open({
+				  type: 1,
+				  title:"温馨提示",
+				  closeBtn: 2, //不显示关闭按钮
+				   skin: 'layui-layer-rim', //加上边框
+				  area: ['480px', '320px'],
+				  btn: '\<\a href="#" style="diplay:block;background:#DD2726;text-align:center;height:38px;line-height:38px;color:#fff;font-size:16px;margin:20px auto;">实名认证\<\/a>',
+//				  shift: 2,
+				  shadeClose: true, //开启遮罩关闭
+				  content: '\<\div style="text-align:center;padding:80px 0 40px;font-size:16px">尊敬的用户，您还未实名认证，请先去实名认证\<\/div>'
+			});
+			})
+			
+		</script>
+	</body>
+</html>

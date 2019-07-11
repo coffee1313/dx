@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="renderer" content="webkit">
+		<title>充值记录-白拿</title>
+		<link rel="stylesheet" href="../../static/css/f_order.css" />
+		<link rel="stylesheet" href="../../static/css/fonts.css" />
+	</head>
+
+	<body>
+		<div class="f_myrightcom ">
+			<!-- S 我的充值及充值明细模块标题 -->
+			<div>
+				<ul class="f_recharge_title">
+					<li class="active">
+						<a href="javascript:void(0);">账户提现</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">提现明细</a>
+					</li>
+				</ul>
+				<div class="f_retit_right"></div>
+				<div class="clear"></div>
+			</div>
+			<!-- E 我的充值模块标题 -->
+			<div class="f_myrechargecon">
+				<!--s 我要充值-->
+				<div class="f_myrecharge_need">
+					<table cellpadding="0" cellspacing="0" class="" border="0">
+						<tr>
+							<td>账户余额</td>
+							<td><span class="c_orange f18">17680.00</span>元</td>
+						</tr>
+						<tr>
+							<td >充值方式</td>
+							<td>
+								<input name="rechargeway" type="radio" value="" /><span>个人网银 </span>
+								<input name="rechargeway" type="radio" value="" /><span>微信支付 </span> 
+								<input name="rechargeway" type="radio" value="" /><span>支付宝支付 </span> 
+							</td>
+						</tr>
+						<tr>
+							<td>充值金额</td>
+							<td><input class="form_input"  type="text" /></td>
+						</tr>
+						<tr class="f_myneed_yz">
+							<td>验证码</td>
+							<td>
+								<input class="form_input" type="text" />
+								<img src="../../static/img/show/images/yz_img_03.png">
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<button type="submit" class="btn_myrecharge">确认充值</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<!--e 我要充值-->
+				<!--s 充值明细-->
+				<div class="f_myrecharge_detail" style="display:none;">
+					<!-- 充值按时间筛选 -->
+					<div class="f_choose a_choose">
+
+						<ul class="f_choose_day">
+								<li class="active">全部</li>
+								<li>今天</li>
+								<li>本周</li>
+								<li>本月</li>
+								<li>最近三个月</li>
+							</ul>
+						<dl class="f_choose_cal">
+							<dd>选择时间段：</dd>
+							<dd><input type="text"></dd>
+							<dd>&nbsp;-&nbsp;</dd>
+							<dd><input type="text"></dd>
+						</dl>
+						<div class="clear a_margin_num"></div>
+						<ul class="f_choose_day">
+							<li class="active">来源状态</li>
+						</ul>
+						<div class="a_select_choose">
+							<ul>
+								<i></i>
+								<li id="payCode" class="a_select_info">
+									<input class="code" type="hidden">
+									<span>全部</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="code" type="hidden">
+									<span>全部</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="code" type="hidden">
+									<span>微信支付</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="code" type="hidden">
+									<span>京东支付</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="code" type="hidden">
+									<span>银联支付</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="code" type="hidden">
+									<span>购物卡</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="code" type="hidden">
+									<span>支付宝支付</span>
+								</li>
+							</ul>
+							<em>-</em>
+							<ul>
+								<i></i>
+								<li id="payStatus" class="a_select_info">
+									<input class="status" type="hidden">
+									<span>全部</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="status" type="hidden">
+									<span>全部</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="status" type="hidden">
+									<span>成功</span>
+								</li>
+								<li class="a_select_detail">
+									<input class="status" type="hidden">
+									<span>未付款</span>
+								</li>
+							</ul>
+						</div>
+						<dl class="f_choose_cal">
+							<dd>交易号：</dd>
+							<dd><input type="text" style="width:299px;"></dd>
+							<dd class="f_choose_search f_choose_search2">搜索</dd>
+						</dl>
+						<div class="clear"></div>
+					</div>
+
+						<div class="f_myrecharge_table ">
+							<table>
+								<tr class="f_part_title">
+									<th style="width: 250px;">交易号</th>
+									<th style="width: 220px;">充值时间</th>
+									<th style="width: 120px;">金额 （元）</th>
+									<th style="width: 140px;">充值通道</th>
+									<th style="width: 90px;">获得银元</th>
+									<th style="width: 90px;">充值状态</th>
+								</tr>
+								<tr>
+									<td>20150915121455556788</td>
+									<td>2016-09-15 15:02:10</td>
+									<td>20</td>
+									<td>微信支付</td>
+									<td>20</td>
+									<td><span>未支付</span></td>
+								</tr>
+								<tr>
+									<td>20150915121455556788</td>
+									<td>2016-09-15 15:02:10</td>
+									<td>20</td>
+									<td>支付宝支付</td>
+									<td>20</td>
+									<td class="f_record_span"><span>未支付</span></td>
+								</tr>
+								
+								<tr>
+									<td>20150915121455556788</td>
+									<td>2016-09-15 15:02:10</td>
+									<td>20</td>
+									<td>晋商贷4.0转入</td>
+									<td>20</td>
+									<td class="f_record_span"><span>未支付</span></td>
+								</tr>
+							</table>
+						</div>
+				</div>
+				<!--e 充值明细-->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../static/plugin/jquery.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				/*今天或者本周。。。选项卡*/
+				$('.f_choose_day li').click(function() {
+					$(this).addClass('f_choose_this').siblings().removeClass('f_choose_this');
+					var index = $(this).index();
+					$('.f_myrechargecon > div').eq(index).show().siblings().hide();
+				});
+				/*我的充值和充值明细选项卡*/
+				$('.f_recharge_title li').click(function() {
+					$(this).addClass('active').siblings().removeClass('active');
+					var index = $(this).index();
+					$('.f_myrechargecon > div').eq(index).show().siblings().hide();
+				});
+			});
+		</script>
+	</body>
+
+</html>

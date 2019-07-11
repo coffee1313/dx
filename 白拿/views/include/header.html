@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="renderer" content="webkit">
+		<title>白拿头部</title>
+		<link rel="stylesheet" href="../../static/css/fonts.css" />
+		<link rel="stylesheet" href="../../static/css/header_footer.css" />
+	</head>
+	<!-- 顶部 -->
+	<body>
+		<div class="header_bg">
+		    <div class="header_top">
+		    	<div class="main_body">
+				    <ul class="header_telephone pull_left">
+				    	<li>
+							<a class="header_index" href="#">
+							<i class="iconfont icon-home middle mr5"></i>
+							<span class="middle">晋商城首页</span>
+							</a>
+						</li>
+						<li><span>客服热线：</span><span>400-814-0777</span></li>
+						<li>
+							<!--S微博-->
+							<div class="header_chat_box J_chat_box">
+								<i class="iconfont icon-weibo"></i>
+								<div  class="pophover_content J_popover_content">
+									<em></em>
+									<div>
+										<p>点击关注疯牛传播微博</p>
+										<img src="../../static/img/show/wb.jpg"/>
+									</div>
+								</div>
+							</div>
+							<!--E微博-->
+							<!--S微信-->
+							<div class="header_chat_box J_chat_box">
+								<i class="iconfont icon-weixin"></i>
+								<div  class="pophover_content J_popover_content">
+			                        <em></em>
+			                        <div>
+			                            <p>扫码晋商贷微信</p>
+			                            <img src="../../static/img/show/wb.jpg"/>
+			                        </div>
+			                    </div>
+							</div>
+							<!--E微信-->
+							<!--S qq-->
+							<div class="header_chat_box J_chat_box">
+								<i class="iconfont icon-qq"></i>
+								<div  class="pophover_content J_popover_content">
+			                        <em></em>
+			                        <div>
+			                            <p>扫码晋商贷微信</p>
+			                            <img src="../../static/img/show/wb.jpg"/>
+			                        </div>
+			                    </div>
+							</div>
+							<!--E qq-->
+						</li>
+					</ul>
+					<!--S未登录-->
+					<dl class="header_siteMap pull_right f12">
+						<dd><a href="javascript:void(0);" >签到</a></dd>
+						<dd><a href="javascript:void(0);" class="c_red">免费注册</a></dd>
+						<dd><a href="javascript:void(0);">登录</a></dd>
+						<dd><a href="javascript:void(0);">我的晋商城<i class="top"></i></a></dd>
+						<dd><a href="javascript:void(0);">充值</a></dd>
+						<dd><a href="javascript:void(0);">帮助</a></dd>
+						<dd class="header_siteMap_last"><a href="javascript:void(0);">官方QQ群</a></dd>
+					</dl>
+			        <!--E未登录-->
+			        <div class="clear"></div>
+			    </div>
+			</div>
+			<div class="main_body">
+				<div class="header_nav">
+					<h1 class="header_logo pull_left"><a href="javascript:void(0);"></a></h1>
+					<ul class="header_nav_list pull_left">
+						<li><a href="javascript:void(0);" class="active">首页</a></li>
+						<li><a href="javascript:void(0);">白拿</a></li>
+						<li><a href="javascript:void(0);">理财</a></li>
+						<li><a href="javascript:void(0);">夺宝</a></li>
+						<li><a href="javascript:void(0);">夺车 </a></li>
+						<li><a href="javascript:void(0);">众筹</a></li>
+						<li><a href="javascript:void(0);">发现</a></li>
+					</ul>
+					<div class="header_search">
+						<input type="text" placeholder="1元抢手机"/><a href="javascript:void(0);" class="iconfont icon-search f18"></a>
+					</div>
+					<div class="clear"></div>
+					<a href="javascript:void(0);" class="header_member_btn">
+						<i class="iconfont icon-user-center f18"></i>
+						<span class="f14">我的资产</span>
+						<i class="iconfont icon-arrow-right f14"></i>
+					</a>
+				</div>
+			</div>
+	    </div>
+    </body>
+</html>
+<script src="../../static/plugin/jquery-1.11.3.js"></script>
+<script>
+	$(function(){
+		$(".J_chat_box").hover(function(){
+			var index=$(this).index(".J_chat_box");
+			if(index==0){
+				$(this).addClass("bg_red");
+			    $(this).find("i").css({color:"#fff"});
+			}
+			if(index==1){
+				$(this).addClass("bg_green");
+				$(this).find("i").css({color:"#fff"});
+			}
+			if(index==2){
+				$(this).addClass("bg_blue");
+				$(this).find("i").css({color:"#fff"});
+			}
+			$(this).find(".J_popover_content").show();
+		},function(){
+			$(".J_popover_content").hide();
+			$(".J_chat_box").removeClass("bg_red bg_green bg_blue");
+			$(".J_chat_box").find("i").css({color:"#666"});
+		});
+
+		$(".header_nav_list li").click(function(){
+			$(".header_nav_list li").find("a").removeClass("active");
+            $(this).find("a").addClass("active");
+		});
+	});
+</script>

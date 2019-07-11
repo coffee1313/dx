@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="renderer" content="webkit">
+		<title>资金记录-白拿</title>
+		<link rel="stylesheet" href="../../static/css/f_order.css" />
+		<link rel="stylesheet" href="../../static/css/fonts.css" />
+	</head>
+
+	<body>
+		<div class="f_myaddress_box">
+			<!-- 地址提示 -->
+			<div class="f_cloud_goods  f_myaddress_tip">
+				<i class="iconfont icon-sound"></i>
+				<span>已保存2条地址，还能保存1条地址</span>
+			</div>
+			<!-- 地址提示-->
+
+			<div class="f_myadressre">
+				<div class="f_address_detail active">
+					<p class="f_p_bg"></p>
+					<div class="f_address_operation">
+						<div class="f_address_default">
+							<i class="iconfont icon-home c_gray"></i>默认银行卡
+						</div>
+						<div class="pull_right">
+							<a href="javascript:void(0);" title="编辑" class="f_set_edit"><i class="iconfont icon-pen"></i></a>
+						</div>
+					</div>
+					<div class="f_user_address">
+						<p class="f_user_message">收货人：张三</p>
+						<p>手机号：15266668888</p>
+						<p>收货地址：山西省 太原市 小店区</p>
+						<p>体育路晋阳街口金拇指广场13层</p>
+					</div>
+					<span class="address_sure"></span>
+				</div>
+				<div class="f_address_detail">
+					<p class="f_p_bg "></p>
+					<div class="f_address_operation text_right">
+							<a href="javascript:void(0);" title="设为默认地址"><i class="iconfont icon-home"></i></a>
+							<a href="javascript:void(0);" title="编辑"><i class="iconfont icon-pen"></i></a>
+							<a href="javascript:void(0);" title="删除" ><i class="iconfont icon-delete"></i></a>
+					</div>
+					<div class="f_user_address">
+						<p class="f_user_message">收货人：张三</p>
+						<p>手机号：15266668888</p>
+						<p>收货地址：山西省 太原市 小店区</p>
+						<p>体育路晋阳街口金拇指广场13层</p>
+					</div>
+					<span class="address_sure"></span>
+				</div>
+
+				<div class="f_add_address">
+					<a href="javascript:void(0);" class="f_add_address_btn"><i class="iconfont icon-add"></i>增加新地址</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!--e 结束-->
+		</div>
+	
+	<script type="text/javascript" src="../../static/plugin/jquery.min.js" ></script>
+	<script type="text/javascript">/*地址点击：选定当前地址*/
+$('.f_address_detail').click(function() {
+	$(this).addClass('active').siblings().removeClass('active');
+});</script>
+	</body>
+
+</html>

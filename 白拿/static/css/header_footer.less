@@ -1,0 +1,316 @@
+@charset "utf-8";
+@import "common.less";
+body{font-family:microsoft Yahei;min-width: 1210px;}
+.header_bg{
+    background:#fff;
+}
+.header_top{
+    height:44px;
+    border-bottom:1px solid #ddd;
+    background:#fff;
+}
+.header_telephone{
+    height:44px;
+}
+.header_telephone li{
+    float: left;
+    line-height:44px;
+    margin-right:20px;
+    font-size:12px;
+    color:#666;
+}
+.header_telephone li span{
+    vertical-align: -2px;
+}
+.header_chat_box{
+    float: left;
+    position: relative;
+    width:26px;
+    height:26px;
+    border:1px solid #ddd;
+    border-radius:50%;
+    margin:9px 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.header_chat_box i{
+    display: block;
+    line-height: 28px;
+    font-size:18px;
+}
+.header_siteMap dd{
+   float: left;
+   line-height:44px;
+   padding:0 12px;
+   border-right:1px solid #ddd; 
+}
+.header_siteMap dd a:hover{
+   color:@color;
+}
+.header_siteMap .header_siteMap_last{
+   border-right:none; 
+}
+.header_siteMap_last i{
+    line-height: 1;
+}
+.pophover_content{
+    width:150px;
+    left: -62px;
+    position: absolute;
+    top: 44px;
+    border:1px solid #ddd;
+    border-radius:2px;
+    background: #fff;
+    padding-bottom:10px;
+    display: none;
+    z-index: 3;
+}
+.pophover_content img{
+    width:130px;
+}
+.pophover_content em{
+    position:absolute;
+    top:-14px;
+    left:60px;
+    line-height: 1;
+    background: url(../img/icon/arrow.png) no-repeat;
+    width:33px;
+    height:14px;
+}
+.header_nav{
+    height:102px;
+    position:relative;
+}
+.header_logo a{
+    display:block;
+    width:186px;
+    height:102px;
+    line-height:102px;
+    margin-right:36px;
+    background:url("../img/logo.png") no-repeat center;
+}
+.header_index{
+    i{color:#a3a3a3;}
+    &:hover{
+        i,span{
+            color:@color;
+        }
+    }
+}
+.header_nav_list{
+    li{
+        float: left;
+        a{
+            display: inline-block;
+            position: relative;
+            height: 102px;
+            line-height: 102px;
+            padding: 0 28px;
+            text-align: center;
+            font-size:16px;
+            &:hover,&.active{
+                color:@color;
+            }
+        }
+    }
+}
+
+.header_search{
+    float:left;
+    position:relative;
+    margin-top:32px;
+    input{
+        width:142px;
+        height:34px;
+        border:1px solid #ddd;
+        border-radius:2px;
+        -webkit-border-radius: 2px;
+        padding:0 36px 0 10px;
+        outline: none;
+    }
+    .icon-search{
+        position:absolute;
+        top:10px;
+        right:8px;
+        color:#666;
+    }
+}
+.header_member_btn{
+    display: block;
+    position:absolute;
+    right:10px;
+    top:32px;
+    width:118px;
+    height:34px;
+    border:1px solid #e6e6e6;
+    border-radius:2px;
+    -webkit-border-radius: 2px;
+    font-size:16px;
+    text-align: center;
+    line-height:34px;
+    background:#f9f9f9;
+    .icon-user-center{
+        color:@color;
+    }
+    .icon-arrow-right{
+        color:#999;
+    }
+    span{
+        padding:0 2px;
+    }
+}
+i.bottom {
+    border-bottom: 4px solid #888;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    left: 3px;
+    position: relative;
+    top: -10px;
+    width:0;
+}
+i.top {
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    border-top: 4px solid #888;
+    left: 3px;
+    position: relative;
+    top: 10px;
+    width: 0;
+}
+//E 头部
+//S 底部
+/*S底部*/
+.advantage_list {
+    overflow: hidden;
+    padding: 64px 0 15px;
+}
+.advantage_list li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.advantage_list li span {
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    background: url("../img/footer_header_icon.png") no-repeat center;
+}
+.advantage_list li p {
+    line-height: 40px;
+    font-size: 16px;
+}
+.footer_box{
+    background: #363b3f;
+    padding:40px 0;
+}
+.footer_con {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #484d50;
+}
+.footer_link_box {
+    float: left;
+}
+.footer_link_box dl {
+    float: left;
+    padding-right: 144px;
+}
+.footer_link_box dl.last_child {
+    padding-right: 44px;
+    border-right: 1px solid #484d50;
+}
+.footer_link_box dl dt {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer_link_box dl dd {
+    margin-top: 12px;
+}
+.footer_link_box dl dd a {
+    color: #c6c7c8;
+}
+.footer_link_box dl dd a:hover {
+    color: #fff;
+}
+.service_info {
+    margin-left: 88px;
+    text-align: center;
+}
+.phone_num {
+    font-size: 30px;
+    color: #aeafb0;
+    line-height: 30px;
+    margin: 18px 0;
+}
+.service_time {
+    display: inline-block;
+    width: 122px;
+    height: 28px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    line-height: 28px;
+    text-align: center;
+    color: #999;
+}
+.service_time .icon-clock {
+    font-size: 20px;
+}
+.footer_contact_way {
+    margin: 44px 0 0 40px;
+}
+.footer_icon_bg {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #555;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.footer_icon_bg .iconfont {
+    color: #555;
+    font-size: 20px;
+}
+.copyright_box{
+    margin:40px auto 20px;
+}
+.copyright_box a{
+    display: inline-block;
+    width:108px;
+    height:44px;
+    background:  url(../img/icon/approve1.png) no-repeat center;
+    margin-right: 18px;
+}
+.copyright_box a:hover{
+    background:  url(../img/icon/approve.png) no-repeat center;
+}
+.copyright_box a.footer_img1{
+    background-position: 0 0;
+}
+.copyright_box a.footer_img2{
+    background-position: -127px 0;
+}
+.copyright_box a.footer_img3{
+    width:123px;
+    background-position: -248px 0;
+}
+.copyright_box a.footer_img4{
+    width:103px;
+    background-position: -389px 0;
+}
+.copyright_box a.footer_img5{
+    width:105px;
+    background-position: -509px 0;
+}
+.copyright_box a.footer_img6{
+    background-position: -628px 0;
+}
+.copyright_box p {
+    margin-top: 26px;
+    color: #6c6c6c;
+}
+//常用值
+.mr5{margin-right:5px;}

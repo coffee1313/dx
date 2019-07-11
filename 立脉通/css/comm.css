@@ -1,0 +1,162 @@
+﻿@charset "utf-8";
+
+/*
+    content:base部分
+*/
+
+body {
+	margin: 0;
+	background: #f6fbff;
+	font-size: 18px;
+	color: #333;
+	font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+
+/*列表初始化*/
+
+ol,
+ul,
+li,
+dl,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*标签初始化*/
+
+i,
+em,
+b {
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/*图片初始化*/
+
+img {
+	display: inline-block;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+
+/*文本控制*/
+
+div,
+span,
+a {
+	word-wrap: break-word;
+	word-break: normal;
+	word-break: break-all;
+}
+
+a{
+  text-decoration:none;
+  font-size:18px;
+  color: #333;
+}
+/*表单disabled*/
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+textarea[readonly] {
+	cursor: text;
+	background: #f0f0f0;
+}
+
+
+/*文本样式*/
+
+.text_left {
+	text-align: left !important;
+}
+
+.text_center {
+	text-align: center !important;
+}
+
+.text_right {
+	text-align: right !important;
+}
+
+
+/*浮动*/
+
+.pull_left {
+	float: left;
+}
+
+.pull_right {
+	float: right;
+}
+
+
+/*清除浮动*/
+
+.clear {
+	clear: both;
+	height: 0;
+	line-height: 0;
+}
+
+
+/*主体*/
+
+.main_body {
+	position: relative;
+	width: 1210px;
+	margin: 0 auto;
+}
+
+
+/*table*/
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+/*字体大小*/
+
+.f14{
+    font-size: 14px;
+}
+.f16{
+    font-size: 16px;
+}
+.f20{
+    font-size: 20px;
+}
+.f22{
+    font-size: 22px;
+}
+.f24{
+    font-size: 24px;
+}
+.f30{
+    font-size: 30px;
+}
+.f48{
+    font-size: 48px;
+}
+.f58{
+	font-size: 58px;
+}
